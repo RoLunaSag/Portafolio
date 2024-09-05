@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../components";
+import { Button, Loader } from "../components";
 
 const Home = () => {
 
@@ -36,6 +36,8 @@ const Home = () => {
           textSize="text-xl"
         />
       </div>
+      <div id="divider" className="flex my-2 h-1 w-full bg-white" />
+      <Loader />
     </div>
   );
 };
