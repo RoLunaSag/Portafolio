@@ -1,6 +1,7 @@
 // NavBar.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ButtonComponent from "./Buttons";
 
 const HeaderNavBar = () => {
   const navigate = useNavigate();
@@ -16,27 +17,26 @@ const HeaderNavBar = () => {
         />
       </div>
       <div className="flex flex-row justify-around items-end mb-2">
-        <button
-          className="flex w-32 h-10 justify-center items-center bg-slate-600 rounded-md animate-bounce drop-shadow-md"
-          onClick={() => navigate("/")}
-        >
-          <p className="font-bold text-base text-white">{"Sobre Mi"}</p>
-        </button>
-        <button
-          className="flex w-32 h-10 justify-center items-center bg-slate-600 rounded-full"
-          onClick={() => navigate("/projects")}
-        >
-          <p className="font-bold text-base text-white">{"Proyectos"}</p>
-        </button>
-        <button
-          className="flex w-32 h-10 justify-center items-center bg-slate-600 rounded-full"
-          onClick={() =>
+        <div className="w-40 h-14">
+          <ButtonComponent
+            onClick={() => navigate("/")}
+            variant="transparent" text="Sobre Mi"
+          />
+        </div>
+        <div className="w-40 h-14">
+          <ButtonComponent
+            onClick={() => navigate("/projects")}
+            variant="transparent" text="Proyectos"
+          />
+        </div>
+        <div className="w-40 h-14">
+          <ButtonComponent
+            onClick={() =>
             (window.location.href =
-              "https://github.com/RoLunaSag?tab=repositories")
-          }
-        >
-          <p className="font-bold text-base text-white">{"Mi GitHub"}</p>
-        </button>
+              "https://github.com/RoLunaSag?tab=repositories")}
+            variant="transparent" text="Mi GitHub"
+          />
+        </div>
       </div>
     </div>
   );
