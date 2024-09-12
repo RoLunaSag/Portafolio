@@ -3,3 +3,6 @@ export { default as DropContainer } from "./DropContainer";
 export { default as Button } from "./Buttons";
 export { default as Icon } from "./Icon";
 export { default as Loader } from './Loader';
+export { default as BgScreen } from './BackgroundScreen';
+export { default as BigBar } from './BigBar';
+export { default as BottomBar } from './BottomBar';

@@ -1,17 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Projects, About } from "../screens";
-import HeaderNavBar from "../components/HeaderNavBar";
-import ScrollToTop from "./ScrollToTop";
+import { Projects, About, Loading, Home } from "../screens";
+import { BottomBar, HeaderNavBar } from "../components";
 
 const MainRouter = () => {
   return (
     <Router>
       <HeaderNavBar />
-      <ScrollToTop />
+      <BottomBar />
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/loading" element={<Loading />} />
       </Routes>
     </Router>
   );

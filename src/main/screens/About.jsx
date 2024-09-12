@@ -1,5 +1,5 @@
 import React from "react";
-import { DropContainer } from "../components";
+import { BgScreen, DropContainer } from "../components";
 
 const About = () => {
   // Arreglo con la info de los drops
@@ -24,34 +24,23 @@ const About = () => {
   ];
 
   return (
-    <div className="flex min-h-screen w-full bg-slate-900">
-      <div className={"flex flex-col rounded-lg mx-4 my-4 bg-gray-600"}>
-        <div className="my-6">
-          <p className="font-semibold text-white mx-5 text-3xl">{"Hola!"}</p>
-        </div>
-        <p className="text-lg text-white mx-5 mb-5">
-          {
-            'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.'
-          }
+    <div className="relative min-h-screen top-20">
+      <BgScreen bgimage='bg-second-img' />
+      <div className="relative z-30 flex flex-col justify-center items-center min-h-screen">
+        <p className='font-bold text-9xl text-white'>
+          {'Sobre Mi'}
         </p>
-        <div className="flex flex-col">
-          {arrayDrops.map((item, index) => (
-            <DropContainer
-              className="my-5 mx-2"
-              key={index}
-              label={item.text}
-              children={
-                <div>
-                  <img
-                    className="flex h-64 w-64"
-                    src={item.urlimage}
-                    alt={item.labelimage}
-                  />
-                </div>
-              }
-            />
-          ))}
-        </div>
+        {arrayDrops.map((item, index) => (
+          <DropContainer className="my-5 mx-2" key={index} label={item.text}>
+            <div>
+              <img
+                className="flex h-64 w-64"
+                src={item.urlimage}
+                alt={item.labelimage}
+              />
+            </div>
+          </DropContainer>
+        ))}
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const Loader = ({ color = '#FFF' }) => {
         <div className="flex flex-row space-x-2">
             {animations.map((animation, index) => (
                 <div key={index} className={animation}>
-                    <Icon iconName="FaCircle" color={color} size={12} />
+                    <Icon iconName="FaCircle" colorIcon={color} size={28} />
                 </div>
             ))}
         </div>
