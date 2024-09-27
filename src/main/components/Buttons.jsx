@@ -48,7 +48,7 @@ const ButtonBase = ({
     textSize,
     colorIcon,
 }) => {
-    const baseClasses = "flex items-center justify-center rounded-full drop-shadow-md hover:opacity-15 ";
+    const baseClasses = "flex items-center justify-center rounded-full drop-shadow-md hover:opacity-15";
     const bgColor = transparent ? 'bg-transparent border border-slate-600 w-full h-full' : backgroundColor || 'bg-slate-600';
     const roundedClass = iconOnly ? 'rounded-full w-full h-full' : 'rounded-md w-full h-full';
     const paddingClass = iconOnly ? 'p-2' : 'px-8 py-4';
