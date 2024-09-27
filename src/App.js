@@ -1,3 +1,4 @@
+import React from 'react';
 import MainRouter from "./main/router/MainRouter";
 
 function App() {
