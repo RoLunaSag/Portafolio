@@ -1,10 +1,8 @@
 import React from 'react'
 import Button from './Buttons'
 import { GiSawedOffShotgun } from "react-icons/gi";
-import { useNavigate } from 'react-router-dom';
 
 const BottomBar = () => {
-    const navigate = useNavigate();
     return (
         <div className="fixed bottom-0 left-0 w-full h-14 bg-blue-web-900 text-white z-20 flex justify-center items-center">
             <div className='flex flex-row w-2/5 justify-between'>

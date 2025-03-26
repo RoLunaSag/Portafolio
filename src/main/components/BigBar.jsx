@@ -7,7 +7,7 @@ const BigBar = ({ isVisible }) => {
   const summary = "Desarrollador Front-End con 5 años de experiencia en aplicaciones móviles y web. Especializado en React, React Native, JavaScript y TypeScript. Amplia experiencia en el uso de librerías CSS y herramientas como GitHub, Bitbucket, Jira y Trello para la gestión de proyectos ágiles y colaborativos.";
 
   return (
-    <div className={`fixed z-20 bottom-0 bg-blue-green w-full h-[40vh] lg:h-96 overflow-y-auto transition-transform duration-700 ease-in-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+    <div className={`fixed bottom-0 bg-blue-web-800 w-full h-[40vh] lg:h-80 overflow-y-auto transition-transform duration-700 ease-in-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
       <div className="flex flex-col lg:flex-row mt-7 w-full justify-between px-4 lg:px-16">
         <div className="flex flex-col space-y-4 w-full lg:w-2/3">
           <p className="font-normal text-4xl sm:text-5xl lg:text-6xl text-white">{name}</p>

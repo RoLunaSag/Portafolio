@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BgScreen, BigBar, BottomBar, HeaderNavBar } from '../components';
+import { BgScreen, BigBar, HeaderNavBar } from '../components';
 import homelanderImage from '../assets/images/homelander.png';
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
     <div className="relative h-screen w-screen overflow-y-auto">
       <BgScreen bgimage="bg-first-img" />
       <HeaderNavBar />
-      <div className="relative z-0 flex justify-center items-center h-full">
+      <div className="relative flex justify-center items-center h-full">
         <img
           src={homelanderImage}
           alt="Homelander"
@@ -24,7 +24,6 @@ const Home = () => {
         />
       </div>
       <BigBar isVisible={dropBottomBar} />
-      <BottomBar />
     </div>
   );
 };
