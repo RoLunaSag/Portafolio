@@ -1,36 +1,39 @@
 import React from "react";
-import { Button, Icon } from "../components";
-import { useNavigate } from "react-router-dom";
+import { BgScreen, HeaderNavBar, ProjectBox } from "../components";
+import { motion } from "framer-motion";
+import ProjectJson from '../utils/projects.json'
 
-const Home = () => {
-
-  const handleEvent = () => {
-    alert('Presionado')
-  }
-
-  const navigate = useNavigate();
-
+const Projects = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-800">
-      <Icon iconName="FaAngleRight" size={27} />
-      <div id="divider" className="flex my-10 h-1 w-full bg-white" />
-      <div className="w-60">
-        <Button variant={'basic'} text="Label del text" onClick={() => alert('Boton Basico presionado')} />
-      </div>
-      <div className="w-12">
-        <Button variant={'only-icon'} iconName={'FaGithub'} sizeIcon={56} onClick={handleEvent} />
-      </div>
-      <div className="w-60">
-        <Button variant="transparent" text="Label del text"/>
-      </div>
-      <div className="w-60">
-        <Button variant="with-icon-left" iconName={'FaGithub'} sizeIcon={12} text="Label del text" />
-      </div>
-      <div className="absolute bottom-2 w-60">
-        <Button variant="with-icon-right" iconName={'FaGithub'} sizeIcon={16} text="Label del text" onClick={() => navigate("/")} />
-      </div>
+    <div className="flex relative h-screen w-screen">
+      <BgScreen bgimage='bg-second-img' />
+      <HeaderNavBar />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="flex flex-col w-screen mb-14">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 px-6 pt-24">
+          {ProjectJson.map((item, index) => (
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              key={index} className="py-2">
+              <ProjectBox
+                image={item.image}
+                onClick={() => (window.location.href = item.repourl)}
+                title={item.title}
+                descr={item.descr}
+              />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 };
 
-export default Home;
+export default Projects;

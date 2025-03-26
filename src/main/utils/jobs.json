@@ -1,0 +1,34 @@
+[
+    {
+        "id": 0,
+        "name": "TechOps Mx",
+        "location": "Querétaro, Querétaro",
+        "position": "Analista Programador",
+        "time": "Oct 2018 - Jul 2019",
+        "desc": "Comencé como practicante realizando pequeñas mejoras en macros desarrolladas para escritorio, enfocadas en actividades de administración y planeación."
+    },
+    {
+        "id": 1,
+        "name": "Kioru",
+        "location": "Pachuca, Hidalgo",
+        "position": "Desarrollador Front End",
+        "time": "Nov 2019 - Sep 2021",
+        "desc": "Aquí inicié mi comprensión de herramientas más especializadas en el desarrollo de software, particularmente en aplicaciones web y móviles."
+    },
+    {
+        "id": 2,
+        "name": "Atomic Labs",
+        "location": "CDMX",
+        "position": "Desarrollador Front End",
+        "time": "Sep 2021 - Sep 2023",
+        "desc": "Trabajé en el desarrollo de aplicaciones móviles, mejora continua de funciones, actualización de código y soporte a proyectos."
+    },
+    {
+        "id": 3,
+        "name": "CITI Value in Real Time",
+        "location": "Monterrey, Nuevo León",
+        "position": "Desarrollador Front End",
+        "time": "Sep 2023 - Feb 2025",
+        "desc": "Brinde consultoría en temas técnicos relacionados con el desarrollo de aplicaciones móviles y di soporte en la creación de código a los clientes que requieren el servicio de la empresa."
+    }
+]

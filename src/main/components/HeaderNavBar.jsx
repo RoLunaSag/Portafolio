@@ -1,42 +1,24 @@
-// NavBar.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import ButtonComponent from "./Buttons";
 
 const HeaderNavBar = () => {
   const navigate = useNavigate();
-  const imageurl =
-    "https://i.etsystatic.com/52665446/r/il/8a5ad2/6030744942/il_fullxfull.6030744942_ehq1.jpg";
+
+  const buttons = [
+    { text: "Inicio", variant: "with-icon-left", icon: 'FaHome', eventButton: '/' },
+    { text: "Proyectos", variant: "with-icon-left", icon: 'FaGithub', eventButton: '/projects' },
+    { text: "Sobre Mi", variant: "with-icon-left", icon: 'FaRegUser', eventButton: '/about' },
+  ];
+
   return (
-    <div className="flex flex-col justify-between bg-sky-950 h-72">
-      <div>
-        <img
-          className="h-44 border-2 border-black rounded-lg mx-5 my-5"
-          src={imageurl}
-          alt="myfaceimage"
-        />
-      </div>
-      <div className="flex flex-row justify-around items-end mb-2">
-        <button
-          className="flex w-32 h-10 justify-center items-center bg-slate-600 rounded-md animate-bounce drop-shadow-md"
-          onClick={() => navigate("/")}
-        >
-          <p className="font-bold text-base text-white">{"Sobre Mi"}</p>
-        </button>
-        <button
-          className="flex w-32 h-10 justify-center items-center bg-slate-600 rounded-full"
-          onClick={() => navigate("/projects")}
-        >
-          <p className="font-bold text-base text-white">{"Proyectos"}</p>
-        </button>
-        <button
-          className="flex w-32 h-10 justify-center items-center bg-slate-600 rounded-full"
-          onClick={() =>
-            (window.location.href =
-              "https://github.com/RoLunaSag?tab=repositories")
-          }
-        >
-          <p className="font-bold text-base text-white">{"Mi GitHub"}</p>
-        </button>
+    <div className="fixed top-0 left-0 w-full z-40 backdrop-blur-md bg-gray-800/60">
+      <div className="flex justify-around flex-row pt-5 pb-5 bg-gray-800">
+        {buttons.map((button, index) => (
+          <div key={index} className="h-10 w-24 lg:w-60">
+            <ButtonComponent text={button.text} variant={button.variant} colorIcon={'#FFF'} sizeIcon={18} iconName={button.icon} onClick={() => navigate(button.eventButton)} />
+          </div>
+        ))}
       </div>
     </div>
   );
