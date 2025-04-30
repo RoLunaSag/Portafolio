@@ -5,7 +5,7 @@
         "location": "Querétaro, Querétaro",
         "position": "Analista Programador",
         "time": "Oct 2018 - Jul 2019",
-        "desc": "Comencé como practicante realizando pequeñas mejoras en macros desarrolladas para escritorio, enfocadas en actividades de administración y planeación."
+        "desc": "• Prácticas profesionales en el área de Planeación. Participé en dos proyectos enfocados en reducir la carga administrativa mediante la automatización de documentos con macros en Excel. \n\n• Me enfoqué en desarrollar macros detalladas que analizaban información y generaban automáticamente documentos PDF útiles para el equipo administrativo, ptimizando el tiempo de elaboración y reduciendo errores manuales."
     },
     {
         "id": 1,
@@ -13,7 +13,7 @@
         "location": "Pachuca, Hidalgo",
         "position": "Desarrollador Front End",
         "time": "Nov 2019 - Sep 2021",
-        "desc": "Aquí inicié mi comprensión de herramientas más especializadas en el desarrollo de software, particularmente en aplicaciones web y móviles."
+        "desc": "• Implementé metodologías de documentación de código para facilitar su comprensión y mantenimiento a largo plazo. \n\n• Desarrollé nuevas funcionalidades con React para un sistema escolar de gran escala, colaborando en la integración de módulos académicos. \n\n• Mantuve y optimicé código en aplicaciones móviles de startups, mejorando su rendimiento y experiencia de usuario."
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
         "location": "CDMX",
         "position": "Desarrollador Front End",
         "time": "Sep 2021 - Sep 2023",
-        "desc": "Trabajé en el desarrollo de aplicaciones móviles, mejora continua de funciones, actualización de código y soporte a proyectos."
+        "desc": " • Participé en el desarrollo de aplicaciones web y móviles, destacando una app orientada a seguros para una empresa del sector financiero. \n\n• Formé parte del equipo que construyó una plataforma web centrada en la salud para una empresa privada en Estados Unidos. \n\n• Contribuí a la reactivación de proyectos legacy, modernizando su base de código y agregando nuevas funcionalidades siguiendo buenas prácticas."
     },
     {
         "id": 3,
@@ -29,6 +29,6 @@
         "location": "Monterrey, Nuevo León",
         "position": "Desarrollador Front End",
         "time": "Sep 2023 - Feb 2025",
-        "desc": "Brinde consultoría en temas técnicos relacionados con el desarrollo de aplicaciones móviles y di soporte en la creación de código a los clientes que requieren el servicio de la empresa."
+        "desc": " • Formé parte de una startup tipo Fintech, colaborando en el desarrollo de una aplicación móvil utilizando React Native, TypeScript y Node.js, entre otras herramientas modernas. \n\n• Refactoricé funciones críticas y segmentos de código para mejorar el rendimiento general de la aplicación, enfocándome en escalabilidad y mantenibilidad."
     }
 ]
