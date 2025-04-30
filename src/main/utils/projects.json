@@ -3,91 +3,11 @@
         "id": 1,
         "title": "Portafolio",
         "descr": "Este es un portafolio creado con React, utiliza librerias como React Router Dom para el manejo de rutas entre paginas, TailwindCss para el estilo de la web app y la responsividad del sitio.",
-        "image": "https://lastfm.freetls.fastly.net/i/u/ar0/a72be958341a477aaa63352f0a00f1da.jpg",
+        "images": [
+            "assets/images/aboutme.jpg",
+            "assets/images/codePortfolio.jpg",
+            "assets/images/porfoliohome.jpg"
+        ],
         "repourl": "https://github.com/RoLunaSag/Portafolio.git"
-    },
-    {
-        "id": 2,
-        "title": "Proyecto 2",
-        "descr": "Descripción del Proyecto 2",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJAn7N8WtyvI-BC97IWmDnL1OWDpzPl5oFJQ&s",
-        "repourl": ""
-    },
-    {
-        "id": 3,
-        "title": "Proyecto 3",
-        "descr": "Descripción del Proyecto 3",
-        "image": "https://i.scdn.co/image/ab67616d00001e026331a905cbc5775028dbaf4f",
-        "repourl": ""
-    },
-    {
-        "id": 4,
-        "title": "Proyecto 4",
-        "descr": "Descripción del Proyecto 4",
-        "image": "https://i.scdn.co/image/ab67616d00001e0242657264e137d2c5a0979b08",
-        "repourl": ""
-    },
-    {
-        "id": 5,
-        "title": "Proyecto 5",
-        "descr": "Descripción del Proyecto 5",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJAn7N8WtyvI-BC97IWmDnL1OWDpzPl5oFJQ&s",
-        "repourl": ""
-    },
-    {
-        "id": 6,
-        "title": "Proyecto 6",
-        "descr": "Descripción del Proyecto 6",
-        "image": "https://i.scdn.co/image/ab67616d00001e026331a905cbc5775028dbaf4f",
-        "repourl": ""
-    },
-    {
-        "id": 7,
-        "title": "Proyecto 7",
-        "descr": "Descripción del Proyecto 7",
-        "image": "https://i.scdn.co/image/ab67616d00001e0242657264e137d2c5a0979b08",
-        "repourl": ""
-    },
-    {
-        "id": 2,
-        "title": "Proyecto 2",
-        "descr": "Descripción del Proyecto 2",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJAn7N8WtyvI-BC97IWmDnL1OWDpzPl5oFJQ&s",
-        "repourl": ""
-    },
-    {
-        "id": 3,
-        "title": "Proyecto 3",
-        "descr": "Descripción del Proyecto 3",
-        "image": "https://i.scdn.co/image/ab67616d00001e026331a905cbc5775028dbaf4f",
-        "repourl": ""
-    },
-    {
-        "id": 4,
-        "title": "Proyecto 4",
-        "descr": "Descripción del Proyecto 4",
-        "image": "https://i.scdn.co/image/ab67616d00001e0242657264e137d2c5a0979b08",
-        "repourl": ""
-    },
-    {
-        "id": 5,
-        "title": "Proyecto 5",
-        "descr": "Descripción del Proyecto 5",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJAn7N8WtyvI-BC97IWmDnL1OWDpzPl5oFJQ&s",
-        "repourl": ""
-    },
-    {
-        "id": 6,
-        "title": "Proyecto 6",
-        "descr": "Descripción del Proyecto 6",
-        "image": "https://i.scdn.co/image/ab67616d00001e026331a905cbc5775028dbaf4f",
-        "repourl": ""
-    },
-    {
-        "id": 7,
-        "title": "Proyecto 7",
-        "descr": "Descripción del Proyecto 7",
-        "image": "https://i.scdn.co/image/ab67616d00001e0242657264e137d2c5a0979b08",
-        "repourl": ""
     }
 ]

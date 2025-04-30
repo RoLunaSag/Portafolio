@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BgScreen, BigBar, HeaderNavBar } from '../components';
-import homelanderImage from '../assets/images/homelander.png';
+import ImageProfile from '../assets/images/yomeroelrodss.png';
 
 const Home = () => {
   const [dropBottomBar, setDropBottomBar] = useState(false);
@@ -18,9 +18,9 @@ const Home = () => {
       <HeaderNavBar />
       <div className="relative flex justify-center items-center h-full">
         <img
-          src={homelanderImage}
-          alt="Homelander"
-          className={`mb-32 lg:mb-72 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] w-auto transition-transform duration-300 ease-in-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-80 opacity-0'}`}
+          src={ImageProfile}
+          alt="Profileimage"
+          className={`mb-32 lg:mb-72 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[640px] w-auto transition-transform duration-300 ease-in-out transform ${isVisible ? 'translate-y-20 opacity-100' : 'translate-y-80 opacity-0'}`}
         />
       </div>
       <BigBar isVisible={dropBottomBar} />

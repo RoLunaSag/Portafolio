@@ -23,10 +23,11 @@ const Projects = () => {
               whileTap={{ scale: 0.9 }}
               key={index} className="py-2">
               <ProjectBox
-                image={item.image}
+                images={item.images}
                 onClick={() => (window.location.href = item.repourl)}
                 title={item.title}
                 descr={item.descr}
+                withRepo={!!item.repourl}
               />
             </motion.div>
           ))}

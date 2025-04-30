@@ -24,7 +24,7 @@ const About = () => {
               <h3 className="text-white text-xl font-semibold">{job.position}</h3>
               <p className="text-blue-300 text-sm">{job.name} - {job.location}</p>
               <p className="text-gray-300 text-sm mb-2">{job.time}</p>
-              <p className="text-gray-200 text-base">{job.desc}</p>
+              <p style={{ whiteSpace: 'pre-line' }} className="text-gray-200 text-base">{job.desc}</p>
             </div>
           ))}
         </div>
